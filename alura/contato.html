@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="contato.css" />
+    <title>Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <img src="img/logo.png" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li>Contatos</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Dados para contato</legend>
+                <label for="nome" class="input-padrao">Nome:</label><input id="nome" required />
+                <label for="email" class="input-padrao"> Email:</label><input type="email" id="email" required
+                    placeholder="seunome@dominio.com" />
+                <label for="telefone" class="input-padrao">Telefone:</label><input type="tel" id="telefone" required
+                    placeholder="(XX) XXXXX-XXXX" />
+                <label for="mensagem" class="input-padrao">Mensagem:</label><textarea id="mensagem" cols="55"
+                    rows="10"></textarea>
+            </fieldset>
+            <div>
+                <p>Como prefere nosso contato?</p>
+                <label for="radio-email"> <input type="radio" id="radio-email" value="email"
+                        name="contato" />Email</label>
+                <label for="radio-telefone"><input type="radio" id="radio-telefone" value="telefone"
+                        name="contato" />Telefone</label>
+                <label for="radio-whatsapp"><input type="radio" id="radio-whatsapp" value="whatsapp" name="contato"
+                        checked />Whatsapp</label>
+            </div>
+
+            <div>
+                <label class="checkbox"><input type="checkbox" id="novidades" /> Gostaria de receber nossas
+                    novidades por email?</label>
+            </div>
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                <select class="select" id="turno">
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+
+            <input type="submit" class="enviar"/>
+        </form>
+    </main>
+    <footer>
+        <img src="img/logo-branco.png" />
+        <p>&commat; Copyright Barbearia Nóis é Macho</p>
+    </footer>
+</body>
+
+</html>
